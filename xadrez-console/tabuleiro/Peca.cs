@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace tabuleiro
 {
     internal class Peca
@@ -13,11 +8,11 @@ namespace tabuleiro
         public int QteMovimento { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, int qteMovimento, Tabuleiro tab)
+        public Peca(Cor cor, Tabuleiro tab)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
-            QteMovimento = qteMovimento;
+            QteMovimento = 0;
             Tab = tab;
         }
     }
