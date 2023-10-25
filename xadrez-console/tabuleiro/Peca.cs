@@ -8,17 +8,17 @@ namespace tabuleiro
 {
     internal class Peca
     {
-        public Posicao posicao { get; set; }
-        public Cor cor { get; protected set; }
-        public int qteMovimento { get; protected set; }
-        public Tabuleiro tab { get; protected set; }
+        public Posicao Posicao { get; set; }
+        public Cor Cor { get; protected set; }
+        public int QteMovimento { get; protected set; }
+        public Tabuleiro Tab { get; protected set; }
 
         public Peca(Posicao posicao, Cor cor, int qteMovimento, Tabuleiro tab)
         {
-            this.posicao = posicao;
-            this.cor = cor;
-            this.qteMovimento = qteMovimento;
-            this.tab = tab;
+            Posicao = posicao;
+            Cor = cor;
+            QteMovimento = qteMovimento;
+            Tab = tab;
         }
     }
 }

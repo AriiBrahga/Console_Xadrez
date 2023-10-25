@@ -1,4 +1,6 @@
-﻿namespace tabuleiro
+﻿using xadrez_console;
+
+namespace tabuleiro
 {
     class Program
     {
@@ -6,6 +8,8 @@
         {
 
             Tabuleiro tab = new Tabuleiro(8,8);
+
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }
